@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("grit", "for grit support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("grit", "enable grit support", "no");
+
+if (PHP_GRIT != "no") {
+	EXTENSION("grit", "grit.c");
+}
+
